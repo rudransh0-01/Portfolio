@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rudransh Rai | Aspiring Web Developer</title>
+  <meta name="description" content="Portfolio of Rudransh Rai, a second-year B.Tech CS-IT student learning web development and DSA in C++.">
+  <!-- Favicon placeholder: replace with your own icon file later -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>R</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="scroll-bar" id="scrollBar" aria-hidden="true"></div>
 
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="Home">RR<span>.</span></a>
+    <nav id="navLinks" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certificates</a>
+      <a href="#education">Education</a>
+      <a class="cta" href="#contact">Contact</a>
+    </nav>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch between dark and light theme">◐</button>
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow">Hey, I'm</p>
+        <h1>Rudransh Rai</h1>
+        <p class="role"><span id="typed">Aspiring Web Developer</span><i class="caret" aria-hidden="true"></i></p>
+        <h2 class="headline">Building for the web. Growing through code.</h2>
+        <p class="intro">I'm a CS-IT student learning web development and Data Structures and Algorithms in C++. I'm building real projects, one step at a time.</p>
+        <div class="btns">
+          <a class="btn primary" href="#projects">Explore My Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+        <p class="social">
+          <a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/rudransh-r-572993395" target="_blank" rel="noopener">LinkedIn</a></p>
+        <ul class="stats">
+          <li><strong>2nd year</strong><span>B.Tech CS-IT</span></li>
+          <li><strong>2</strong><span>Projects</span></li>
+          <li><strong>React, Node.js</strong><span>Learning next</span></li>
+        </ul>
+      </div>
+      <!-- PHOTO SPACE: save your photo in this folder as photo.jpg (portrait works best).
+           Until then, the RR monogram shows. -->
+      <div class="hero-art">
+        <div class="portrait" id="badge">
+          <div class="p-frame">
+            <div class="photo-slot">
+              <span class="initials" aria-hidden="true">RR</span>
+              <img src="photo.jpg" alt="Photo of Rudransh Rai" onload="this.parentElement.classList.add('has-photo')">
+            </div>
+            <div class="p-caption">
+              <strong>Rudransh Rai</strong>
+              <span><i class="live"></i> Learning and building</span>
+            </div>
+          </div>
+          <span class="p-chip k1" aria-hidden="true">&lt;/&gt; HTML</span>
+          <span class="p-chip k2" aria-hidden="true">{ } CSS</span>
+          <span class="p-chip k3" aria-hidden="true">JS</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="track">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React (learning)</span><span>Node.js (learning)</span><span>C++ (learning)</span><span>Git</span><span>GitHub</span><span>VS Code</span>
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React (learning)</span><span>Node.js (learning)</span><span>C++ (learning)</span><span>Git</span><span>GitHub</span><span>VS Code</span>
+    </div></div>
+
+    <!-- ABOUT -->
+    <section id="about" class="wrap reveal">
+      <h2 class="title"><small>01</small> About me</h2>
+      <p class="lead">I'm a second-year B.Tech student in Computer Science and Information Technology. I'm building my web development skills and learning Data Structures and Algorithms in C++.</p>
+      <p class="lead">I'm still early in my journey, and that's the point. My goal is to build real projects, strengthen my problem-solving, and get ready for internships and placements.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="wrap reveal">
+      <h2 class="title"><small>02</small> Technical skills</h2>
+      <div class="grid bento">
+        <article class="card">
+          <h3>Frontend Development</h3>
+          <ul class="badges">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li class="learn">React · learning</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Backend Development</h3>
+          <ul class="badges"><li class="learn">Node.js · learning</li></ul>
+        </article>
+        <article class="card">
+          <h3>Programming and Problem-Solving</h3>
+          <ul class="badges">
+            <li class="learn">C++ · learning</li><li class="learn">DSA in C++ · learning</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Developer Tools</h3>
+          <ul class="badges">
+            <li class="learn">Git · learning</li><li class="learn">GitHub · learning and practicing</li><li>VS Code · using</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="wrap reveal">
+      <h2 class="title"><small>03</small> Projects</h2>
+      <div class="grid">
+        <article class="card project">
+          <span class="status built">Built</span>
+          <h3>Bookstore Website</h3>
+          <p>An online bookstore where visitors can browse books and view details.</p>
+          <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <p class="links"><a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">GitHub</a> <a href="#" target="_blank" rel="noopener">Live demo</a></p>
+        </article>
+        <article class="card project">
+          <span class="status progress">In progress</span>
+          <h3>Weather App</h3>
+          <p>A web app where you search a city and see its current weather, using a public weather API.</p>
+          <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Weather API</li></ul>
+          <p class="links"><a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">GitHub</a> <a href="#" target="_blank" rel="noopener">Live demo</a></p>
+        </article>
+        <article class="card project">
+          <span class="status built">Built</span>
+          <h3>Personal Portfolio Website</h3>
+          <p>This website. A portfolio I keep improving throughout my degree.</p>
+          <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <p class="links"><a href="https://rudransh0-01.github.io" target="_blank" rel="noopener">Live site</a> <a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS: copy one <article> block for each certificate you earn -->
+    <section id="certifications" class="wrap reveal">
+      <h2 class="title"><small>04</small> Certifications</h2>
+      <div class="grid">
+        <article class="card cert">
+          <span class="medal" aria-hidden="true">★</span>
+          <h3>Certificate name here</h3>
+          <p>Issuer (for example Coursera, Udemy, freeCodeCamp) · Year</p>
+          <p class="links"><a href="#" target="_blank" rel="noopener">View certificate</a></p>
+        </article>
+        <article class="card cert">
+          <span class="medal" aria-hidden="true">★</span>
+          <h3>Another certificate name</h3>
+          <p>Issuer · Year</p>
+          <p class="links"><a href="#" target="_blank" rel="noopener">View certificate</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="wrap reveal">
+      <h2 class="title"><small>05</small> Education</h2>
+      <article class="card">
+        <h3>B.Tech in Computer Science and Information Technology (CS-IT)</h3>
+        <p>GL Bajaj · Dr. A.P.J. Abdul Kalam Technical University (AKTU)</p>
+        <p class="muted">Currently in 2nd year</p>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap reveal">
+      <h2 class="title"><small>06</small> Let's Connect</h2>
+      <p class="lead">I'm open to learning opportunities, internships and project ideas. The best way to reach me is below.</p>
+      <ul class="contact">
+        <li><span>Email</span><a href="mailto:rudranshrai111@gmail.com">rudranshrai111@gmail.com</a><button class="copy" type="button" data-copy="rudranshrai111@gmail.com">Copy</button></li>
+        <li><span>GitHub</span><a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">github.com/rudransh0-01</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/rudransh-r-572993395" target="_blank" rel="noopener">linkedin.com/in/rudransh-r-572993395</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><p>Designed and built by Rudransh Rai · © <span id="year"></span></p></footer>
+  <button id="toTop" class="to-top" type="button" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
