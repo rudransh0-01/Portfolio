@@ -1,192 +1,258 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rudransh Rai | Aspiring Web Developer</title>
-  <meta name="description" content="Portfolio of Rudransh Rai, a second-year B.Tech CS-IT student learning web development and DSA in C++.">
-  <!-- Favicon placeholder: replace with your own icon file later -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>R</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Rudransh Rai, a B.Tech CSIT student learning full-stack web development.">
+  <title>Rudransh Rai | Aspiring Full-Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <div class="scroll-bar" id="scrollBar" aria-hidden="true"></div>
 
-  <!-- NAVIGATION -->
-  <header class="nav">
-    <a class="brand" href="#home" aria-label="Home">RR<span>.</span></a>
-    <nav id="navLinks" aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certificates</a>
-      <a href="#education">Education</a>
-      <a class="cta" href="#contact">Contact</a>
-    </nav>
-    <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch between dark and light theme">◐</button>
-    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Rudransh Rai, go to top">RR</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="main">
+  <main>
     <!-- HERO -->
-    <section id="home" class="hero wrap">
-      <div class="hero-text">
-        <p class="eyebrow">Hey, I'm</p>
-        <h1>Rudransh Rai</h1>
-        <p class="role"><span id="typed">Aspiring Web Developer</span><i class="caret" aria-hidden="true"></i></p>
-        <h2 class="headline">Building for the web. Growing through code.</h2>
-        <p class="intro">I'm a CS-IT student learning web development and Data Structures and Algorithms in C++. I'm building real projects, one step at a time.</p>
-        <div class="btns">
-          <a class="btn primary" href="#projects">Explore My Projects</a>
-          <a class="btn" href="#contact">Contact Me</a>
-        </div>
-        <p class="social">
-          <a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/rudransh-r-572993395" target="_blank" rel="noopener">LinkedIn</a></p>
-        <ul class="stats">
-          <li><strong>2nd year</strong><span>B.Tech CS-IT</span></li>
-          <li><strong>2</strong><span>Projects</span></li>
-          <li><strong>React, Node.js</strong><span>Learning next</span></li>
-        </ul>
-      </div>
-      <!-- PHOTO SPACE: save your photo in this folder as photo.jpg (portrait works best).
-           Until then, the RR monogram shows. -->
-      <div class="hero-art">
-        <div class="portrait" id="badge">
-          <div class="p-frame">
-            <div class="photo-slot">
-              <span class="initials" aria-hidden="true">RR</span>
-              <img src="photo.jpg" alt="Photo of Rudransh Rai" onload="this.parentElement.classList.add('has-photo')">
-            </div>
-            <div class="p-caption">
-              <strong>Rudransh Rai</strong>
-              <span><i class="live"></i> Learning and building</span>
-            </div>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="status"><span class="dot"></span>Currently Learning &amp; Building</span>
+          <p class="greeting">Hello, I'm</p>
+          <h1>Rudransh Rai</h1>
+          <h2 class="headline">Aspiring Full-Stack Developer</h2>
+          <p class="intro">I'm a B.Tech CSIT student at GL Bajaj Institute of Technology and Management. I enjoy learning web technologies and building practical projects to improve my skills.</p>
+          <div class="btn-row">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
           </div>
-          <span class="p-chip k1" aria-hidden="true">&lt;/&gt; HTML</span>
-          <span class="p-chip k2" aria-hidden="true">{ } CSS</span>
-          <span class="p-chip k3" aria-hidden="true">JS</span>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <!-- Replace images/profile.jpg with your own photo -->
+            <img src="images/profile.jpg" alt="Portrait of Rudransh Rai" id="profileImg">
+            <div class="photo-fallback" id="photoFallback">RR</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="marquee" aria-hidden="true"><div class="track">
-      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React (learning)</span><span>Node.js (learning)</span><span>C++ (learning)</span><span>Git</span><span>GitHub</span><span>VS Code</span>
-      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React (learning)</span><span>Node.js (learning)</span><span>C++ (learning)</span><span>Git</span><span>GitHub</span><span>VS Code</span>
-    </div></div>
-
     <!-- ABOUT -->
-    <section id="about" class="wrap reveal">
-      <h2 class="title"><small>01</small> About me</h2>
-      <p class="lead">I'm a second-year B.Tech student in Computer Science and Information Technology. I'm building my web development skills and learning Data Structures and Algorithms in C++.</p>
-      <p class="lead">I'm still early in my journey, and that's the point. My goal is to build real projects, strengthen my problem-solving, and get ready for internships and placements.</p>
+    <section class="section alt" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm pursuing B.Tech in Computer Science and Information Technology at GL Bajaj Institute of Technology and Management. I'm building my frontend skills with HTML and CSS, learning JavaScript, and starting to explore backend development.</p>
+            <p>I like experimenting with layouts, understanding how websites work, and improving my UI/UX design skills. Each project I build is part of my learning journey toward becoming a full-stack developer.</p>
+          </div>
+          <div class="info-cards">
+            <div class="card info-card"><h3>Education</h3><p>B.Tech CSIT</p></div>
+            <div class="card info-card"><h3>College</h3><p>GL Bajaj</p></div>
+            <div class="card info-card"><h3>Current Focus</h3><p>Web Development</p></div>
+            <div class="card info-card"><h3>Goal</h3><p>Full-Stack Development</p></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="wrap reveal">
-      <h2 class="title"><small>02</small> Technical skills</h2>
-      <div class="grid bento">
-        <article class="card">
-          <h3>Frontend Development</h3>
-          <ul class="badges">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li><li class="learn">React · learning</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Backend Development</h3>
-          <ul class="badges"><li class="learn">Node.js · learning</li></ul>
-        </article>
-        <article class="card">
-          <h3>Programming and Problem-Solving</h3>
-          <ul class="badges">
-            <li class="learn">C++ · learning</li><li class="learn">DSA in C++ · learning</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Developer Tools</h3>
-          <ul class="badges">
-            <li class="learn">Git · learning</li><li class="learn">GitHub · learning and practicing</li><li>VS Code · using</li>
-          </ul>
-        </article>
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-sub">Tags show where I am with each technology: <strong>Using</strong>, <strong>Learning</strong>, <strong>Exploring</strong>, or <strong>Planned</strong>.</p>
+        <div class="skills-grid">
+          <div class="card skill-card">
+            <h3>Frontend Development</h3>
+            <ul class="skill-list">
+              <li>HTML5 <span class="tag tag-using">Using</span></li>
+              <li>CSS3 <span class="tag tag-using">Using</span></li>
+              <li>JavaScript <span class="tag tag-learning">Learning</span></li>
+              <li>Responsive Web Design <span class="tag tag-using">Using</span></li>
+            </ul>
+          </div>
+          <div class="card skill-card">
+            <h3>Backend Development</h3>
+            <ul class="skill-list">
+              <li>Node.js <span class="tag tag-exploring">Exploring</span></li>
+              <li>Express.js <span class="tag tag-planned">Planned</span></li>
+              <li>REST APIs <span class="tag tag-planned">Planned</span></li>
+            </ul>
+          </div>
+          <div class="card skill-card">
+            <h3>Tools and Platforms</h3>
+            <ul class="skill-list">
+              <li>Git <span class="tag tag-learning">Learning</span></li>
+              <li>GitHub <span class="tag tag-learning">Learning</span></li>
+              <li>VS Code <span class="tag tag-using">Using</span></li>
+              <li>Chrome DevTools <span class="tag tag-using">Using</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="wrap reveal">
-      <h2 class="title"><small>03</small> Projects</h2>
-      <div class="grid">
-        <article class="card project">
-          <span class="status built">Built</span>
-          <h3>Bookstore Website</h3>
-          <p>An online bookstore where visitors can browse books and view details.</p>
-          <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          <p class="links"><a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">GitHub</a> <a href="#" target="_blank" rel="noopener">Live demo</a></p>
-        </article>
-        <article class="card project">
-          <span class="status progress">In progress</span>
-          <h3>Weather App</h3>
-          <p>A web app where you search a city and see its current weather, using a public weather API.</p>
-          <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Weather API</li></ul>
-          <p class="links"><a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">GitHub</a> <a href="#" target="_blank" rel="noopener">Live demo</a></p>
-        </article>
-        <article class="card project">
-          <span class="status built">Built</span>
-          <h3>Personal Portfolio Website</h3>
-          <p>This website. A portfolio I keep improving throughout my degree.</p>
-          <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          <p class="links"><a href="https://rudransh0-01.github.io" target="_blank" rel="noopener">Live site</a> <a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">GitHub</a></p>
-        </article>
+    <section class="section alt" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="card project-card">
+            <div class="preview preview-book" aria-hidden="true">
+              <span class="book b1"></span><span class="book b2"></span><span class="book b3"></span><span class="book b4"></span>
+            </div>
+            <div class="project-body">
+              <h3>BookStore Website</h3>
+              <span class="tag tag-using">Completed · Learning Project</span>
+              <p>A bookstore website built to practise HTML and CSS, with book listings, a clean layout, and a user-friendly browsing experience.</p>
+              <ul class="tech-list"><li>HTML5</li><li>CSS3</li></ul>
+              <div class="btn-row">
+                <a href="https://bookstore-allied5.vercel.app/" class="btn btn-small btn-primary" target="_blank" rel="noopener">Live Demo</a>
+<a href="https://github.com/rudransh0-01/bookstore" class="btn btn-small btn-outline" target="_blank" rel="noopener">GitHub</a>
+                
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="preview preview-site" aria-hidden="true">
+              <span class="bar"></span><span class="bar short"></span><span class="block"></span>
+            </div>
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <span class="tag tag-learning">Currently Building</span>
+              <p>My personal portfolio showcasing my background, development skills, projects, certifications, and contact information.</p>
+              <ul class="tech-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="btn-row">
+                <a href="https://r-portfolio-allied5.vercel.app/" class="btn btn-small btn-primary" target="_blank" rel="noopener">Live Demo</a>
+<a href="https://github.com/rudransh0-01/portfolio" class="btn btn-small btn-outline" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="preview preview-tasks" aria-hidden="true">
+              <span class="task done"></span><span class="task"></span><span class="task"></span>
+            </div>
+            <div class="project-body">
+              <h3>Task Manager Web App</h3>
+              <span class="tag tag-planned">Planned · Not Started</span>
+              <p>A planned project to build a simple task manager where users can add tasks, mark them as completed, and remove them. It will help me practise JavaScript and DOM manipulation.</p>
+              <ul class="tech-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="btn-row">
+                <a href="#" class="btn btn-small btn-primary" target="_blank" rel="noopener">Live Demo</a>
+                <a href="#" class="btn btn-small btn-outline" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p class="note">Links are placeholders. Replace each <code>#</code> with your real URL.</p>
       </div>
     </section>
 
-    <!-- CERTIFICATIONS: copy one <article> block for each certificate you earn -->
-    <section id="certifications" class="wrap reveal">
-      <h2 class="title"><small>04</small> Certifications</h2>
-      <div class="grid">
-        <article class="card cert">
-          <span class="medal" aria-hidden="true">★</span>
-          <h3>Certificate name here</h3>
-          <p>Issuer (for example Coursera, Udemy, freeCodeCamp) · Year</p>
-          <p class="links"><a href="#" target="_blank" rel="noopener">View certificate</a></p>
-        </article>
-        <article class="card cert">
-          <span class="medal" aria-hidden="true">★</span>
-          <h3>Another certificate name</h3>
-          <p>Issuer · Year</p>
-          <p class="links"><a href="#" target="_blank" rel="noopener">View certificate</a></p>
-        </article>
+    <!-- CURRENTLY LEARNING & BUILDING -->
+    <section class="section" id="learning">
+      <div class="container narrow">
+        <h2 class="section-title">Currently Learning &amp; Building</h2>
+        <ul class="timeline">
+          <li>Improving my HTML and CSS fundamentals</li>
+          <li>Learning JavaScript and DOM manipulation</li>
+          <li>Building and refining my personal portfolio</li>
+          <li>Exploring backend development and how websites communicate with servers</li>
+          <li>Improving my Git and GitHub workflow</li>
+        </ul>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="wrap reveal">
-      <h2 class="title"><small>05</small> Education</h2>
-      <article class="card">
-        <h3>B.Tech in Computer Science and Information Technology (CS-IT)</h3>
-        <p>GL Bajaj · Dr. A.P.J. Abdul Kalam Technical University (AKTU)</p>
-        <p class="muted">Currently in 2nd year</p>
-      </article>
+    <!-- CERTIFICATIONS -->
+    <section class="section alt" id="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-sub">Courses I have completed while learning web development and AI fundamentals.</p>
+        <div class="cert-grid">
+          <!-- Copy this card for each new certificate -->
+          <article class="card cert-card">
+            <h3>Introduction to Full-Stack Web Development</h3>
+            <p class="cert-org">Vodafone Idea Foundation, VOIS &amp; Edunet Foundation</p>
+            <p class="cert-date">Completed: August 19, 2026</p>
+            <a href="WhatsApp Image 2026-10-28 at 2.35.48 AM.jpeg" class="btn btn-small btn-outline" target="_blank" rel="noopener">View Certificate</a>
+          </article>
+          <article class="card cert-card">
+            <h3>Getting Started with Artificial Intelligence</h3>
+            <p class="cert-org">IBM SkillsBuild</p>
+            <p class="cert-date">Completed: August 18, 2026</p>
+            <a href="certificate.jpeg" class="btn btn-small btn-outline" target="_blank" rel="noopener">View Certificate</a>
+          </article>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="wrap reveal">
-      <h2 class="title"><small>06</small> Let's Connect</h2>
-      <p class="lead">I'm open to learning opportunities, internships and project ideas. The best way to reach me is below.</p>
-      <ul class="contact">
-        <li><span>Email</span><a href="mailto:rudranshrai111@gmail.com">rudranshrai111@gmail.com</a><button class="copy" type="button" data-copy="rudranshrai111@gmail.com">Copy</button></li>
-        <li><span>GitHub</span><a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">github.com/rudransh0-01</a></li>
-        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/rudransh-r-572993395" target="_blank" rel="noopener">linkedin.com/in/rudransh-r-572993395</a></li>
-      </ul>
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">I'm open to feedback, learning opportunities, and internships. Reach out through any of these.</p>
+        <div class="contact-links">
+          <a class="card contact-card" href="mailto:rudranshrai111@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span><strong>Email</strong><small>rudranshrai111@gmail.com</small></span>
+          </a>
+          <a class="card contact-card" href="https://github.com/rudransh0-01" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.300.7-1.600-2.700-.3-5.500-1.300-5.500-5.900 0-1.300.5-2.400 1.200-3.200-.1-.4-.5-1.600.1-3.200 0 0 1-.3 3.300 1.200a11.500 11.500 0 0 1 6 0c2.300-1.500 3.300-1.200 3.300-1.200.6 1.600.2 2.800.1 3.200.8.800 1.200 1.900 1.200 3.200 0 4.600-2.800 5.600-5.500 5.900.4.400.8 1.100.8 2.200v3.300c0 .3.200.7.800.6A12 12 0 0 0 12 .3" fill="currentColor"/></svg>
+            <span><strong>GitHub</strong><small>github.com/rudransh0-01</small></span>
+          </a>
+          <a class="card contact-card" href="https://www.linkedin.com/in/rudransh-r-572993395" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4v11H4z M6 3.500a2.300 2.300 0 1 1 0 4.600 2.300 2.300 0 0 1 0-4.600z M10 9h3.800v1.600c.6-1 1.900-1.900 3.800-1.900 3.600 0 4.400 2.400 4.400 5.400V20h-4v-5.200c0-1.300 0-2.800-1.800-2.800s-2.200 1.300-2.200 2.700V20h-4z" fill="currentColor"/></svg>
+            <span><strong>LinkedIn</strong><small>linkedin.com/in/rudransh-r-572993395</small></span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer><p>Designed and built by Rudransh Rai · © <span id="year"></span></p></footer>
-  <button id="toTop" class="to-top" type="button" aria-label="Back to top">↑</button>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Rudransh Rai</strong>
+        <p>Built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/rudransh0-01" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/rudransh-r-572993395" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+    <p class="copyright">&copy; <span id="year">2026</span> Rudransh Rai. All rights reserved.</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">Top</button>
 
   <script src="script.js"></script>
 </body>
